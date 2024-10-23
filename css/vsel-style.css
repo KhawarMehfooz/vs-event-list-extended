@@ -1,0 +1,106 @@
+/* For reference only - plugin loads the minified CSS file */
+
+/* VS Event List stylesheet */
+
+/* Container when using shortcode or widget */
+#vsel {clear:both;}
+#vsel:after {content:''; display:block; height:0; clear:both;}
+
+/* Container for single event */
+.vsel-content {}
+.vsel-content:after {content:''; display:block; height:0; clear:both;}
+
+/* Container for single event when using shortcode or widget */
+#vsel .vsel-content {margin:0 0 20px; padding:0 0 20px; border-bottom:1px solid #ccc;}
+
+/* Misc */
+.vsel-content p {margin:0 0 10px; padding:0;}
+.vsel-content p:last-of-type {margin-bottom:0;}
+.vsel-alignleft {float:left;}
+.vsel-alignright {float:right;}
+
+/* Event details */
+.vsel-meta {}
+.vsel-content h2.vsel-meta-title {margin:0 0 5px; padding:0; font-size:1.2em;}
+.vsel-content h3.vsel-meta-title {margin:0 0 5px; padding:0; font-size:1.2em;}
+.vsel-content h4.vsel-meta-title {margin:0 0 5px; padding:0; font-size:1.2em;}
+.vsel-content div.vsel-meta-title {margin:0 0 5px; padding:0; font-size:1.2em;}
+.vsel-meta > div {margin:0 0 5px;}
+.vsel-meta > div:last-of-type {margin-bottom:0;}
+.vsel-meta-title {clear:both;}
+.vsel-meta-date {}
+.vsel-meta-start-date {}
+.vsel-meta-end-date {}
+.vsel-meta-combined-date {}
+.vsel-meta-single-date {}
+.vsel-meta-time {}
+.vsel-meta-all-day {}
+.vsel-meta-location {}
+.vsel-meta-link {}
+.vsel-meta-cats {}
+.vsel-meta-error {font-weight:bold;}
+.acf-field-error {font-weight:bold;}
+
+/* Event details - date icon */
+.vsel-meta-date-icon {line-height:1.5;}
+.vsel-start-icon, .vsel-end-icon {display:inline-block; margin:0 10px 0 0; background:#f8f8f8; color:#333; text-align:center;}
+.vsel-day, .vsel-month, .vsel-year {display:block; padding:2px 15px;}
+.vsel-year {font-size:0.8em;}
+.vsel-day-top, .vsel-month-top {background:#333; color:#fff;}
+
+/* Event details - date icon next to other event details */
+.vsel-meta-combine {}
+.vsel-meta-combine:after {content:''; display:block; height:0; clear:both;}
+.vsel-meta-combine > div {margin:0 0 5px;}
+.vsel-meta-combine > div:last-of-type {margin-bottom:0;}
+.vsel-meta-combine .vsel-meta-date-icon {float:left;}
+.vsel-meta-combine .vsel-meta-title {clear:none;}
+
+/* Event info container */
+.vsel-info-block {}
+.vsel-image-figure {}
+.vsel-content figure.vsel-alignleft {margin:5px 10px 5px 0;}
+.vsel-content figure.vsel-alignright {margin:5px 0 5px 10px;}
+.vsel-content img.vsel-image {max-width:100%; height:auto; margin:0; padding:0; border:0;}
+.vsel-caption {display:block;}
+.vsel-info {}
+.vsel-read-more {display:block;}
+.vsel-info-acf-fields {padding:20px 0 0;}
+.vsel-info-acf-fields > div {margin:0 0 5px;}
+.vsel-info-acf-fields > div:last-of-type {margin-bottom:0;}
+
+/* Navigation */
+.vsel-nav, .vsel-nav-numeric {clear:both;}
+.vsel-nav:after, .vsel-nav-numeric:after {content:''; display:block; height:0; clear:both;}
+.vsel-nav a.vsel-next {float:right;}
+.vsel-nav a.vsel-prev {float:left;}
+
+/* No events notification */
+.vsel-no-events {margin:0; padding:0 0 20px;}
+
+/* Widget */
+.vsel-widget {}
+.vsel-widget:after {content:''; display:block; height:0; clear:both;}
+
+/* Widget - text above event list */
+.vsel-widget-text {margin:0 0 20px;}
+.vsel-widget-text p {margin:0 0 10px; padding:0;}
+.vsel-widget-text p:last-of-type {margin-bottom:0;}
+
+/* Widget - event details */
+.vsel-widget .vsel-meta {clear:both; margin:0 0 20px;}
+
+/* Widget - event info container */
+.vsel-widget .vsel-info-block {clear:both;}
+
+/* Widget - link to all events */
+.vsel-widget .vsel-widget-link {}
+
+/* Mobile */
+@media screen and (max-width:767px) {
+	/* Event details */
+	.vsel-meta {width:100% !important; clear:both; float:left; margin:0 0 20px; box-sizing:border-box;}
+
+	/* Event info container */
+	.vsel-info-block {width:100% !important; clear:both; float:left; box-sizing:border-box;}
+}

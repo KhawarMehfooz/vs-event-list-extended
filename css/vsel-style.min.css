@@ -1,0 +1,159 @@
+#vsel {clear:both;}#vsel:after {content:'';display:block;height:0;clear:both;}.vsel-content:after {content:'';display:block;height:0;clear:both;}#vsel .vsel-content {margin:0 0 20px;padding:0 0 20px;border-bottom:1px solid #ccc;}.vsel-content p {margin:0 0 10px;padding:0;}.vsel-content p:last-of-type {margin-bottom:0;}.vsel-alignleft {float:left;}.vsel-alignright {float:right;}.vsel-content h2.vsel-meta-title {margin:0 0 5px;padding:0;font-size:1.2em;}.vsel-content h3.vsel-meta-title {margin:0 0 5px;padding:0;font-size:1.2em;}.vsel-content h4.vsel-meta-title {margin:0 0 5px;padding:0;font-size:1.2em;}.vsel-content div.vsel-meta-title {margin:0 0 5px;padding:0;font-size:1.2em;}.vsel-meta > div {margin:0 0 5px;}.vsel-meta > div:last-of-type {margin-bottom:0;}.vsel-meta-title {clear:both;}.vsel-meta-error {font-weight:bold;}.acf-field-error {font-weight:bold;}.vsel-meta-date-icon {line-height:1.5;}.vsel-start-icon, .vsel-end-icon {display:inline-block;margin:0 10px 0 0;background:#f8f8f8;color:#333;text-align:center;}.vsel-day, .vsel-month, .vsel-year {display:block;padding:2px 15px;}.vsel-year {font-size:0.8em;}.vsel-day-top, .vsel-month-top {background:#333;color:#fff;}.vsel-meta-combine:after {content:'';display:block;height:0;clear:both;}.vsel-meta-combine > div {margin:0 0 5px;}.vsel-meta-combine > div:last-of-type {margin-bottom:0;}.vsel-meta-combine .vsel-meta-date-icon {float:left;}.vsel-meta-combine .vsel-meta-title {clear:none;}.vsel-content figure.vsel-alignleft {margin:5px 10px 5px 0;}.vsel-content figure.vsel-alignright {margin:5px 0 5px 10px;}.vsel-content img.vsel-image {max-width:100%;height:auto;margin:0;padding:0;border:0;}.vsel-caption {display:block;}.vsel-read-more {display:block;}.vsel-info-acf-fields {padding:20px 0 0;}.vsel-info-acf-fields > div {margin:0 0 5px;}.vsel-info-acf-fields > div:last-of-type {margin-bottom:0;}.vsel-nav, .vsel-nav-numeric {clear:both;}.vsel-nav:after, .vsel-nav-numeric:after {content:'';display:block;height:0;clear:both;}.vsel-nav a.vsel-next {float:right;}.vsel-nav a.vsel-prev {float:left;}.vsel-no-events {margin:0;padding:0 0 20px;}.vsel-widget:after {content:'';display:block;height:0;clear:both;}.vsel-widget-text {margin:0 0 20px;}.vsel-widget-text p {margin:0 0 10px;padding:0;}.vsel-widget-text p:last-of-type {margin-bottom:0;}.vsel-widget .vsel-meta {clear:both;margin:0 0 20px;}.vsel-widget .vsel-info-block {clear:both;}@media screen and (max-width:767px) {.vsel-meta {width:100% !important;clear:both;float:left;margin:0 0 20px;box-sizing:border-box;}.vsel-info-block {width:100% !important;clear:both;float:left;box-sizing:border-box;}}
+/* Reset and override theme styles */
+#vsel.vsel-shortcode {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#vsel .vsel-event-entry {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+    border: none !important;
+    flex-direction: row !important;
+}
+
+#vsel .vsel-event-entry:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+#vsel .vsel-event-date {
+    min-width: 60px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+#vsel .vsel-event-day {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#vsel .vsel-event-month {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    margin: 0;
+}
+
+#vsel .vsel-event-info {
+    flex: 1;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#vsel .vsel-event-title,
+#vsel .vsel-meta-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    line-height: 1.4 !important;
+    color: #333 !important;
+    border: none !important;
+}
+
+#vsel .vsel-event-meta {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#vsel .vsel-event-time {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#vsel .vsel-location-separator {
+    color: #ddd;
+    margin: 0 8px;
+}
+
+#vsel .vsel-event-location {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#vsel .vsel-recurring-indicator {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+}
+
+/* Container styling */
+#vsel {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: .5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #vsel .vsel-event-entry {
+        padding: 15px !important;
+    }
+    
+    #vsel .vsel-event-date {
+        min-width: 50px;
+        margin-right: 15px;
+    }
+    
+    #vsel .vsel-event-meta {
+        font-size: 13px;
+    }
+    
+    #vsel .vsel-event-title,
+    #vsel .vsel-meta-title {
+        font-size: 15px !important;
+    }
+}
+
+/* Reset any theme-specific styles that might interfere */
+#vsel .vsel-event-entry::before,
+#vsel .vsel-event-entry::after {
+    display: none !important;
+}
+
+#vsel .vsel-event-info::before,
+#vsel .vsel-event-info::after {
+    display: none !important;
+}
+
+#vsel * {
+    box-sizing: border-box;
+}
+
+/* Month header styling */
+#vsel .vsel-month-header {
+    /* font-size: 1.625rem !important; */
+    /* font-weight: 500; */
+    /* color: #333; */
+    margin: 40px 0 20px;
+    padding: 0;
+}
+
+#vsel .vsel-month-header:first-child {
+    margin-top: 0;
+}
+
+/* Reset counter for striping within each month */
+#vsel .vsel-month-header + .vsel-event-entry {
+    border-top: 1px solid #eee;
+}
